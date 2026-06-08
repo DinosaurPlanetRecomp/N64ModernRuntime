@@ -1867,8 +1867,8 @@ std::vector<recomp::mods::ModLoadErrorDetails> build_regen_list(
             }
             else {
                 section_ram_addr = recomp::overlays::get_section_ram_addr(section_index);
-                got_ram_addr = recomp::overlays::get_section_got_ram_addr(section_index);
                 cur_section_relocs = recomp::overlays::get_section_relocs(section_index);
+                got_ram_addr = recomp::overlays::get_section_got_ram_addr(section_index);
             }
 
             // Allocate a new section.
